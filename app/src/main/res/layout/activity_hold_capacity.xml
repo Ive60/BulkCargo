@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📦 Hold Capacity Utilisation"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter holds: Name,GrainsVol_m3,BaleVol_m3 (one per line)"
+            android:textSize="12sp"
+            android:textColor="#666"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputHolds"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="No.1,15000,13500\nNo.2,18000,16200"
+            android:inputType="textMultiLine"
+            android:gravity="top|start"
+            android:padding="12dp"
+            android:fontFamily="monospace"
+            android:scrollbars="vertical" />
+
+        <EditText
+            android:id="@+id/inputWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Cargo Weight (tonnes)"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/inputSF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stowage Factor (m³/tonne)"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#1565C0"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:background="#E3F2FD"
+            android:textColor="#0D47A1"
+            android:textIsSelectable="true"
+            android:fontFamily="monospace" />
+
+    </LinearLayout>
+</ScrollView>

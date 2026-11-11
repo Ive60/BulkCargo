@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚓ Trim &amp; Heeling Estimator"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cargo Distribution (one per line: Name,Weight_t,LCG_m)"
+            android:textSize="12sp"
+            android:textColor="#666"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/inputCargoDist"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="No.1,10000,25.0\nNo.2,15000,65.0"
+            android:inputType="textMultiLine"
+            android:gravity="top|start"
+            android:padding="12dp"
+            android:fontFamily="monospace"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vessel Parameters"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LCB — Longitudinal Centre of Buoyancy (m)"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputLCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="LCB (e.g. 100.0)"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LCF — Longitudinal Centre of Flotation (m)"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputLCF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="LCF (e.g. 95.0)"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MTC — Moment to Change Trim 1 cm (t-m/cm)"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputMTC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="MTC (e.g. 200.0)"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TP — Tonnes Per Centimetre Immersion (t/cm)"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TP (e.g. 20.0)"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Trim"
+            android:textSize="18sp"
+            android:backgroundTint="#1565C0"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:background="#E3F2FD"
+            android:textColor="#0D47A1"
+            android:textIsSelectable="true"
+            android:fontFamily="monospace" />
+
+    </LinearLayout>
+</ScrollView>

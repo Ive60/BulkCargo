@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📐 Grains vs Bale Capacity"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/inputGrains"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grains Capacity (m³)"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/inputDunnage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dunnage Factor (%)"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnGrainsToBale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grains → Bale Capacity"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#1565C0"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="── OR ──"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textStyle="italic"
+            android:textColor="#888" />
+
+        <EditText
+            android:id="@+id/inputBale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bale Capacity (m³)"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnBaleToGrains"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bale → Grains Capacity"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#1565C0"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#E3F2FD"
+            android:textColor="#0D47A1"
+            android:textIsSelectable="true"
+            android:fontFamily="monospace" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: Dunnage factor typically 3-7% depending on hold shape and cargo type."
+            android:textSize="12sp"
+            android:paddingTop="16dp"
+            android:textColor="#888"
+            android:gravity="center" />
+
+    </LinearLayout>
+</ScrollView>
